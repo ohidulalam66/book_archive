@@ -1,0 +1,7 @@
+/* Google Font css link */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
+/* Google font css */
+.font {
+  font-family: "Inconsolata", monospace;
+}
