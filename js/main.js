@@ -24,17 +24,17 @@ const displayShow = data => {
 
     /* data result count */
     searchDataCount.innerHTML = `
-    <h5 class="fw-bold">Search Books Found: ${data.numFound}</h5>`;
+    <h4 class="fw-bold">Search books found: <span class= "text-danger">${data.docs.length}</span> of <span class= "text-danger">${data.numFound}</span></h4>`;
 
     /* data dom clear */
     bookContainer.textContent = '';
 
     /* data result found */    
     const books = data.docs;
-    
+
     /* Result Error Handling */
     if (books.length === 0) {
-        searchError.innerHTML = `<h2 class= "fw-bold text-center text-danger my-5">Not Result Found</h2>`;
+        searchError.innerHTML = `<h2 class= "fw-bold text-center text-danger my-5">Sorry, Show no more books found</h2>`;
         searchDataCount.innerHTML = '';
     }
     else {
