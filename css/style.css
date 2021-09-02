@@ -5,3 +5,7 @@
 .font {
   font-family: "Inconsolata", monospace;
 }
+/* background color */
+.bg-color {
+  background: #e3f4e4;
+}

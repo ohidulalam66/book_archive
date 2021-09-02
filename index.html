@@ -12,10 +12,25 @@
     <!-- StyleSheet Css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="container font">
-    <h2>Hello i am HTML</h2>
-    <p>Bangladesh, to the east of India on the Bay of Bengal, is a South Asian country marked by lush greenery and many waterways. Its Padma (Ganges), Meghna and Jamuna rivers create fertile plains, and travel by boat is common. On the southern coast, the Sundarbans, an enormous mangrove forest shared with Eastern India, is home to the royal Bengal tiger.</p>
-
+<body class="container bg-color font">
+    <!-- Header -->
+    <header>
+        <h1 class="text-uppercase bg-secondary text-white p-4 fw-bold">Book Archive</h1>
+        <div class="input-group w-50 mx-auto mb-3">
+            <input id="search-field" type="text" class="form-control" placeholder="Search Book" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="search-button">Search</button>
+        </div>
+    </header>
+    <!-- Main -->
+    <main>
+        <!-- Books Results Found -->
+        <div id="data-count"></div>
+        <!-- search Error -->
+        <div id="sesrch-error"></div>
+        <!-- Books Results -->
+        <div id="book-container" class="row row-cols-1 row-cols-md-6 g-4 mt-4">
+        </div>
+    </main>
 
 
     <!-- js -->
