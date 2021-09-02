@@ -16,11 +16,19 @@ searchbtn.addEventListener('click', function () {
     const url = `http://openlibrary.org/search.json?q=${search}`;
     fetch(url)
         .then(res => res.json())
-        .then(data => displayShow(data.docs))
+        .then(data => displayShow(data))
 });
 
 /* Display show books data */
-const displayShow = books => {
+const displayShow = data => {
+
+    /* data result count */
+    searchDataCount.innerHTML = `
+    <h5 class="fw-bold">Search Books Found: ${data.numFound}</h5>`;
+
+    /* data dom clear */
+    bookContainer.textContent = '';
+    const books = data.docs;
 
     /* Result Error Handling */
     if (books.length === 0) {
@@ -30,18 +38,12 @@ const displayShow = books => {
     else {
         searchError.innerHTML = '';
     };
-    /* data dom clear */
-    bookContainer.textContent = '';
+
 
     /* Loop run to get data */
     books.forEach(book => {
-        console.log(book);
 
-        /* data result count */
-        searchDataCount.innerHTML = `
-        <h5 class="fw-bold">Search Books Found: ${books.length}</h5>`;
-
-        /* data is added to the container */
+    /* data is added to the container */
         const div = document.createElement('div');
         div.classList.add('col');
         div.innerHTML = `
