@@ -28,6 +28,8 @@ const displayShow = data => {
 
     /* data dom clear */
     bookContainer.textContent = '';
+
+    /* data result found */    
     const books = data.docs;
 
     /* Result Error Handling */
@@ -57,6 +59,6 @@ const displayShow = data => {
         </div>
         `;
         bookContainer.appendChild(div);
-    })
+    });
 
 };
