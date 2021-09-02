@@ -39,7 +39,6 @@ const displayShow = data => {
         searchError.innerHTML = '';
     };
 
-
     /* Loop run to get data */
     books.forEach(book => {
 
