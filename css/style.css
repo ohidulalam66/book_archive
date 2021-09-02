@@ -1,11 +1,30 @@
-/* Google Font css link */
+/* font css link */
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
 
-/* Google font css */
+/* header font link */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+/* header font css */
+.header-font {
+  font-family: "Lobster", cursive;
+}
+
+/* font css */
 .font {
   font-family: "Inconsolata", monospace;
 }
+
 /* background color */
 .bg-color {
-  background: #e3f4e4;
+  background: #d1ebe9;
+}
+
+/* poster img*/
+.poster {
+  width: 15%;
+}
+
+/*  */
+.hearder-bg {
+  background: white;
 }
