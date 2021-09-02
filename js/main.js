@@ -52,8 +52,8 @@ const displayShow = data => {
             <img class: "img-fluid" src="https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="card-img-top img-fluid"">
             <div class="card-body">
                 <h5 class="card-title fw-bold">Name: ${book.title}</h5>
-                <p>Publisher: ${book.publisher ? book.publisher: 'Not found'}</p>
                 <p>Author Name: ${book.author_name ? book.author_name: 'Not found'}</p>
+                <p>Publisher: ${book.publisher ? book.publisher: 'Not found'}</p>
                 <p>First publish year: ${book.first_publish_year}</p>
             </div>
         </div>
