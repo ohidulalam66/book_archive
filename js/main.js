@@ -8,7 +8,7 @@ const searchError = document.getElementById('search-error');
 /* Add event handeler key press */
 searchFiled.addEventListener("keypress", function(event) {
     // event.preventDefault();
-    if (event.keyCode == 13)
+    if (event.key === 'Enter')
     searchbtn.click();
 });
 
