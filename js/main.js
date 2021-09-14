@@ -5,7 +5,14 @@ const bookContainer = document.getElementById('book-container');
 const searchDataCount = document.getElementById('data-count');
 const searchError = document.getElementById('search-error');
 
-/* Add event handeler */
+/* Add event handeler key press */
+searchFiled.addEventListener("keypress", function(event) {
+    // event.preventDefault();
+    if (event.keyCode == 13)
+    searchbtn.click();
+});
+
+/* Add event handeler mouse click */
 searchbtn.addEventListener('click', function () {
     const search = searchFiled.value;
 
